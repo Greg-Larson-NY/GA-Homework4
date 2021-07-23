@@ -1,0 +1,212 @@
+body {
+    font-family:'Lato', Arial, sans-serif;
+}
+h3{
+    color:black;
+}
+/* Trulia Hearder Style */
+.hstyle{
+    background-color: rgba(32,192,99,1);
+    font-size: 1em;
+    display:flex;
+    justify-content: space-between;
+}
+/* Left side of Trulia nav bar */
+.lnav{
+    width: 30em;
+    color:white;
+    display: flex;
+    align-items:center;
+    padding:.5em;
+
+}
+/* Right side of Trulia nav bar */
+.rnav{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .5em;
+}
+/* jsir button */
+.jsir{
+    background-color: rgba(32,192,99,1);
+    box-shadow: none;
+    color: white;
+    border-radius: 50%;
+    border-color: white;
+    padding: .5em;
+    margin: .25em;
+    border-top: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
+    border-right: 3px solid rgb(255, 255, 255);
+}
+/* Top nav decoration */
+.topnav{
+    text-decoration: none;
+    color: white;
+}
+/* Top nav hover */
+.topnav:hover {
+    color: #63f7b2;
+}
+/* MAIN CONTAINER FOR GRID  */
+.listbox{
+    display: grid;
+    grid-template-columns: 27em 27em 27em;
+    grid-template-rows: 3em 3em 3em em;
+    column-gap: 12px;
+    row-gap: 12px;
+    width: 100%;
+    background-color: #e8e9ea;
+    padding-top:1em;
+    padding-bottom: 1em;
+    justify-content: center;
+    justify-items: stretch;
+}
+/* NEW button styling */
+.new{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(61, 221, 75);
+    color:white;
+    width: 3em;
+}
+/* FSBO button styling */
+.fsbo{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(111, 126, 170);
+    color:white;
+    width: 12em;  
+}
+/* Container for listing details */
+.details{
+    display:flex;
+    flex-direction: column;
+    padding:.75em;
+    background-color: rgb(255, 255, 255);
+    font-size: .75em;
+    color:rgb(175, 174, 174);
+}
+/* Container for rooms and sqft */
+.rooms{
+    display:flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/* Styling for all home pictures */
+.pictures{
+    width:34em;
+    height: 175px;
+    border-radius: 1em;
+    object-fit: cover;
+}
+/* Hover TEST for fun */
+.hov :hover{
+    box-shadow: 10px 5px 5px slategrey;
+}
+/* Styling for page navigation */
+.pagenav{
+    margin:2em;
+    text-align: center;
+    line-height: 2em;
+    text-decoration: none;
+    color:black;
+}
+.pagenav:link{
+    color: rgb(37, 172, 60);
+}
+.pagenav :hover{
+    color:rgb(38, 78, 116);
+}
+/* Styling for insights section */
+.insights{
+    margin-left: 3em;
+    margin-right:8em;
+    font-size: .85em;
+}
+/* Hover and link styling for header */
+.txtnav{
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+.txtnav:link, .txtnav:visited{
+    color: rgb(37, 172, 60);
+}
+.txtnav :hover{
+    color:rgb(38, 78, 116);
+}
+/* Styling for footer */
+.footnavbox{
+    background-color: rgb(37, 37, 37);
+    height: 5em;
+}
+.footnav{
+    color: rgb(161, 161, 161);
+    padding:1.75em;
+    font-size: .95em;
+    text-decoration: none;
+}
+.copyright{
+    color: rgb(161, 161, 161);
+    font-size: .5em;
+    text-align: left;
+    padding-top: .5em;
+}
+/* Hover for footer */
+.footnav :hover{
+    color:rgb(255, 255, 255);
+}
+/* MODAL BOX */
+.modbox{
+    display:flex;
+    justify-content: center;
+    padding:1em;
+
+}
+button {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.5em rgba(4, 190, 4, 0.671);
+    background-color:rgb(37, 172, 60);
+    color: white;
+    font-size: 1em;
+  }
+  button:hover {
+    background-color: rgb(24, 110, 38);
+    color:yellow;
+  }
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.356);
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+  }
+  .modal div {
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(3, 190, 3);
+    border-width: 5px;
+    color:black
+    min-height: 20vh;
+    max-width: 64em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4em;
+  }
+  /* END OF MODAL */
